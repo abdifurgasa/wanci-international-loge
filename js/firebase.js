@@ -1,16 +1,19 @@
-// Import Firebase
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your Firebase configuration
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBQOT84qzCDIk5YrgrUD-SeXaNV5HwpBVE",
-  authDomain: "lelo-international-hotel-2254a.firebaseapp.com",
-  projectId: "lelo-international-hotel-2254a",
-  storageBucket: "lelo-international-hotel-2254a.firebasestorage.app",
-  messagingSenderId: "889193332993",
-  appId: "1:889193332993:web:6ca3745ebbb05a75939b00",
-  measurementId: "G-C1M5H8T741"
+  apiKey: "AIzaSyDhwcN1ATAJmy4-zwps_n6nBhHdT-x_bOA",
+  authDomain: "wonchi-international-lodge.firebaseapp.com",
+  projectId: "wonchi-international-lodge",
+  storageBucket: "wonchi-international-lodge.firebasestorage.app",
+  messagingSenderId: "1094808203309",
+  appId: "1:1094808203309:web:2fbdf4a2b13e3d6c2588a4",
+  measurementId: "G-9WN54QG87G"
 };
 
 // Initialize Firebase
