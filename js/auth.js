@@ -1,16 +1,10 @@
 import { auth } from "./firebase.js";
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-/* =============================
-Login Function
-============================= */
-
 window.loginUser = async function(){
 
 const email = document.getElementById("email").value.trim();
 const password = document.getElementById("password").value.trim();
-
-/* Validation */
 
 if(!email || !password){
 alert("Please enter email and password");
@@ -19,16 +13,12 @@ return;
 
 try{
 
-const userCredential = await signInWithEmailAndPassword(auth, email, password);
+await signInWithEmailAndPassword(auth, email, password);
 
-// Save session
-localStorage.setItem("leloUser", JSON.stringify(userCredential.user));
-
-// Redirect dashboard
+// ✅ Firebase handles session automatically
 window.location.replace("dashboard.html");
 
 }
-
 catch(error){
 
 console.error("Login Error:", error.message);
